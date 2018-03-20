@@ -34,8 +34,8 @@ int KM(){
         ex_girl[i] = love[i][0];
         for (int j = 1; j < M; ++j) ex_girl[i] = max(ex_girl[i], love[i][j]);
     }
-    for (int i = 0; i < M; ++i) {
-        fill(slack, slack + M, INF);    // 因为要取最小值 初始化为无穷大
+    for (int i = 0; i < N; ++i) {
+        fill(slack, slack + N, INF);    // 因为要取最小值 初始化为无穷大
         while (1) {
             memset(vis_girl, false, sizeof vis_girl);
             memset(vis_boy, false, sizeof vis_boy);
