@@ -5,7 +5,7 @@
 #include <string>
 #include <algorithm>
 using namespace std;
-const int MAXN = 410;
+const int MAXN = 100000+5;
 struct bign
 {
 	int len, s[MAXN];
@@ -183,7 +183,8 @@ ostream& operator << (ostream &out, const bign &x)
 }
 int main()
 {
-	bign a, b, c, d, e, f, g;
+	ios::sync_with_stdio(false);
+	bign a, b;
 	cin>>a>>b;
 	cout<<a*b;
 	return 0;

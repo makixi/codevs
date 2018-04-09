@@ -19,7 +19,7 @@ int main(){
 			r[j]=j;
 			while (r[j]<n&&h[j]<=h[r[j]+1]) r[j]=r[r[j]+1];
 		}	
-		for (int i=1;i<=n;i++) ans=max(ans,(long long)h[i]*(r[i]-l[i]+1));
+		for (int j=1;j<=n;j++) ans=max(ans,(long long)h[j]*(r[j]-l[j]+1));
 	}
 	printf("%lld",ans);
 	return 0;
